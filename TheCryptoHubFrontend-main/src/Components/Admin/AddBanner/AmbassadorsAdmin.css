@@ -1,0 +1,17 @@
+.addBlogDrawerAd .container-fluid{
+
+    width: 100px !important;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+}
+
+.anothers{
+    HEIGHT: 61PX;
+}
+.editColDataVeh{
+    display: flex !important;
+}
+.editColDataVeh .addBlogDrawerAd{
+    width: 100px;
+}

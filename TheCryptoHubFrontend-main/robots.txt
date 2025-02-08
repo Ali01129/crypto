@@ -1,0 +1,5 @@
+User-agent : *
+
+Disallow :
+
+sitemap : https://instastoryview.co.kr/sitemap.xml

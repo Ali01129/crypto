@@ -1,0 +1,92 @@
+.mainHeaderAdmin{
+    align-items: center;
+    display: flex;
+    height: 70px;
+    justify-content: space-between;
+    margin: 0 auto;
+    display: flex;
+    justify-content: end;
+    padding-right: 80px;
+    gap: 20px;
+    /* align-items: flex-end; */
+
+}
+
+.topMainHeaderAdmin{
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgb(31 30 47 / 6%);
+    left: 9px;
+    position: fixed;
+    right: 0;
+    left: 2.7%;
+    top: 0;
+    z-index: 12;
+}
+.absolute3{
+position:fixed !important;
+z-index: 120 !important;
+}
+.topMainHeaderAdminRight{
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgb(31 30 47 / 6%);
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 12;
+}
+
+.topNotificationNum{
+    position: relative;
+}
+
+.numberTxtNotifi{
+    background-color: #f46a6a;
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:#fff;
+    font-size: 12px;
+    position: absolute;
+    top: -13px;
+    left: 9px;
+
+}
+
+.notificionIcon{
+    font-size: 24px;
+    color: gray;
+}
+
+.bsProfileIconHd{
+    font-size: 40px;
+    border: 1px solid;
+    border-radius: 50%;
+}
+
+.topIconNameHd{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+}
+.topIconNameHd svg{
+
+    color: #03BABC!important;
+    
+
+
+}
+@media (max-width:991px) {
+    .mainHeaderAdmin{
+        padding-right: 20px;
+    }
+
+    .topMainHeaderAdminRight{
+        left: 0px;
+    }
+    
+}

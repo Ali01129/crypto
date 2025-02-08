@@ -1,0 +1,339 @@
+.cardStkHldr {
+  border-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 0 40px rgb(51 51 51 / 10%);
+  height: auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  /* background-color: red; */
+  width: 400px;
+  height: 300px;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.emailInputStk {
+  display: block;
+  font-family: 'Poppins', sans-serif;
+  width: 95%;
+  box-shadow: none;
+  background: #fff;
+  font-weight: 400;
+  letter-spacing: 0;
+  border: 1px solid #ddd;
+  color: #333;
+  -webkit-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+  padding: 10px 12px;
+  font-size: 16px;
+  border-radius: 4px;
+  font-size: 18px;
+  border-radius: 6px;
+  padding: 12px 14px;
+}
+
+.btnSubmitStk {
+  display: inline-block;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: 0;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  background-position: center;
+  margin-top: 5px;
+
+  background-color: #296a9c;
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  padding: 12px 12px;
+  font-size: 15px;
+  border-radius: 3px;
+  width: 277px;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  align-items: center;
+}
+.btnSubmitStk:hover {
+  background-color: #174d76;
+}
+.cardStkHeading {
+  font-size: 25px;
+  font-weight: 800;
+  line-height: 74px;
+  max-width: 200px;
+  /* font-size: 40px; */
+  letter-spacing: 1px;
+  font-weight: 700;
+  font-family: 'Poppins', sans-serif;
+  color: black;
+}
+
+.cardMainTxtStk {
+  font-family: 'Poppins', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  line-height: 1.5;
+  text-align: center;
+  max-width: 350px;
+  color: rgb(22, 28, 45);
+  height: 72px;
+}
+
+.mainContainerStakeHolder {
+  padding-bottom: 100px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding-top: 180px;
+}
+
+.rightArrowBtn {
+  font-size: 24px;
+  transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg)
+    rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+  transform-style: preserve-3d;
+}
+
+.btnSubmitStk:hover .rightArrowBtn {
+
+
+animation: hoverEffect 1s 1;
+
+}
+
+@keyframes hoverEffect {
+  0%{
+    transform:translateX(0px);
+/* rotate: 90deg; */
+  }
+  50%{
+    transform:translateX(50px);
+    opacity: 0;
+
+  }
+  70%{
+    transform:translateX(-30px);
+opacity: 0;
+  }
+  100%{
+
+    transform:translateX(0px);
+opacity: 1;
+/* 
+to{}
+from{}
+*/
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.w-dyn-empty {
+  padding: 10px;
+  background-color: #dddddd;
+}
+.w-dyn-hide {
+  display: none !important;
+}
+.w-dyn-bind-empty {
+  display: none !important;
+}
+.w-condition-invisible {
+  display: none !important;
+}
+
+
+.home-content--btn1{
+  margin-top: 10px;
+  position: relative;
+  overflow: hidden;
+  width: fit-content;
+}
+
+.content-btn--inner1{
+  /* padding: 0.75rem 3rem; */
+  font-family: "Sarabun";
+  font-weight: 600;
+  font-style: normal;
+  /* font-size: 20px; */
+  /* line-height: 28px; */
+  color: #000000;
+  background-color: black;
+  border: none;
+  display: flex;
+  justify-content: center;
+  height: 38px;
+  padding: 0 10px;
+  align-items: center;
+  border-radius: 2px;
+  cursor: pointer;
+}
+.content-btn--inner1 p{
+  position: relative;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-family: 'Montserrat', sans-serif;
+  /* font-family: 'Poppins', sans-serif; */
+  margin: 0px;
+  z-index: 1;
+}
+
+.home-content--btn1:hover  .content-btn--inner1   {
+/* color: #000000 !important;
+transition: color 0.4s; */
+border: 1px solid black !important;
+
+}
+.home-content--btn1:hover  .content-btn--inner1 p  {
+color: #000000 !important;
+transition: color 0.4s;
+font-weight: 600;
+
+
+}
+
+.hover-btn1{
+  position: absolute;
+  height: 100%;
+  width: 100%; 
+}
+
+.home-content--btn1:hover .hover-btn1{
+  height: 100%;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 1);
+  animation: swipe 0.4s ease-in-out 1;
+  border: 2px solid black;
+
+}
+@keyframes swipe {
+  0%{width: 0%;}
+  100%{width: 100%;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.home-content--btn2{
+  /* margin-top: 10px; */
+  position: relative;
+  cursor: pointer;
+  width: 100% !important;
+  overflow: hidden;
+  width: fit-content;
+}
+
+.content-btn--inner2{
+  /* padding: 0.75rem 3rem; */
+  font-family: "Sarabun";
+  font-weight: 600;
+  font-style: normal;
+  /* font-size: 20px; */
+  /* line-height: 28px; */
+  color: #000000;
+  background-color: black;
+  border: none;
+  display: flex;
+  justify-content: center;
+  height: 50px;
+  padding: 0 10px;
+  align-items: center;
+  border-radius: 2px;
+  width: 100%;
+  cursor: pointer;
+}
+.content-btn--inner2 p{
+  position: relative;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-family: 'Montserrat', sans-serif;
+  /* font-family: 'Poppins', sans-serif; */
+  margin: 0px;
+  z-index: 1;
+}
+
+.home-content--btn2:hover  .content-btn--inner2   {
+/* color: #000000 !important;
+transition: color 0.4s; */
+border: 1px solid black !important;
+
+}
+.home-content--btn2:hover  .content-btn--inner2 p  {
+color: #000000 !important;
+transition: color 0.4s;
+font-weight: 600;
+
+
+}
+
+.hover-btn2{
+  position: absolute;
+  height: 100%;
+  width: 100%; 
+}
+
+.home-content--btn2:hover .hover-btn2{
+  height: 100%;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 1);
+  animation: swipe 0.4s ease-in-out 1;
+  border: 2px solid black;
+
+}
+@keyframes swipe {
+  0%{width: 0%;}
+  100%{width: 100%;}
+}
+
+@media (max-width:850px) {
+
+.mainContainerStakeHolder{
+  flex-direction: column;
+  align-items: center;
+}
+  
+}
+@media (max-width:450px) {
+
+  .cardStkHldr {
+    width: 95%;
+
+  }
+  .btnSubmitStk{
+    width: 210px;
+    gap: 10px;
+    padding: 5px 0px;
+  }
+
+  .cardMainTxtStk{
+    padding: 0px 5px;
+  }
+  .emailInputStk{
+    padding: 7px 10px;
+  }
+}

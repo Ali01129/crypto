@@ -1,0 +1,893 @@
+.middleHeader {
+    text-align: center; /* Center the text */
+    font-family: 'Poppins', sans-serif; /* Professional font */
+    font-size: 36px; /* Large font size for prominence */
+    font-weight: 700; /* Bold weight */
+    color: #2c3e50; /* Dark navy color for contrast */
+    margin: 20px 0; /* Space around the header */
+    animation: fadeIn 1s ease-in-out; /* Animation for appearance */
+}
+.background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+min-height:1200px !important;
+height: 150vh !important;
+    object-fit: cover !important; /* Ensures the video covers the entire container */
+    z-index: -3; /* Places the video behind other elements */
+}
+
+
+/* Animation keyframes */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px); /* Slight upward motion */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.newsTicker {
+    margin-top: 6vh;
+    font-weight: 600;
+    font-size: 19.439px;
+    padding-top: 17px !important;
+    align-items: center;
+    text-align: center !important;
+    line-height: 32px;
+    background:#170e35 !important;
+    color: #ffffff;
+    height: 41px;
+    padding-top: 12px !important;
+    width: 100vw;
+    letter-spacing: 2px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    white-space: nowrap; /* Ensures the text stays on one line */
+    position: relative;
+}
+.rfm-marquee{
+    padding-right: 10% !important;
+}
+  
+
+  .mainHeaderComponent .blocks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 30px 30px 30px;
+    
+  }
+  
+
+
+
+  .mainHeaderComponent .blocksOuter {
+
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap; /* Ensures responsiveness */
+    width: 100%;
+    max-width: 90vw;
+  }
+
+
+  
+  .mainHeaderComponent .block {
+    background-color: white;    
+    box-shadow: 0px -2px 4px rgba(0, 0, 0, 0.15), /* Lighter upper shadow */
+    0px 2px 4px rgba(0, 0, 0, 0.15); /* Lighter lower shadow */      -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+    backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+    --tw-backdrop-blur: blur(50px);
+
+    padding: 25px 50px;
+color: black !important;
+        
+text-align: center;
+    border-radius: 8px;
+    flex: 1 1 30%; /* Flexible to fit 3 blocks in a row, responsive */
+    min-width: 250px; /* Minimum width to control shrink */
+  }
+
+
+  
+  .mainHeaderComponent .block h2 {
+    font-size: 21px;
+    margin-bottom: 10px;
+  }
+  
+ .mainHeaderComponent .block p {
+    font-size: 18px;
+    line-height: 1.4;
+    margin-bottom: 5px !important;
+  }
+  
+  @media (max-width: 768px) {
+    .background-video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+    min-height:100vh !important;
+    height: 100vh !important;
+        object-fit: cover !important; /* Ensures the video covers the entire container */
+        z-index: -3; /* Places the video behind other elements */
+    }
+    
+    .mainHeaderComponent .blocksOuter {
+      flex-direction: column; /* Stack blocks vertically on mobile */
+      align-items: center;
+    }
+  }
+  
+
+.mainHeaderComponent{
+    height: auto !important;
+    width: 100%;
+    /* background-image: url('../../assets/images/back1.png') !important; */
+    background-repeat: no-repeat;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding-top: 5vh;   
+    background-size: cover;
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: column;
+
+    align-items: center;
+}
+
+.innerHeaderCompBack{
+
+    /* height:80vh; */
+    
+    width: 100%;
+    /* background-image: url('./../../images/back2.png'); */
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top;
+    display: flex;
+    position: relative;
+    z-index: 999;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+    padding-top: 2vh;
+    padding-bottom: 9vh;
+
+    /* gap: 40px; */
+
+}
+
+.imgBackSec{
+    height: 56%;
+    width: 89%;
+    position: absolute;
+    transition:all 10s linear;
+    /* background-position: 0px 0px ,0px 0px; */
+    /* animation:picSlider 10s linear infinite ; */
+}
+@keyframes picSlider {
+    0%{
+       
+       
+        /* background-position: 60px 0px,0px 0px; */
+     
+        transform: scaleX(1) scaleY(1) scaleZ(1) rotateX(0deg) rotateY(32deg) rotateZ(0deg) translateX(0px) translateY(0px) translateZ(0px) skewX(0deg) skewY(0deg);
+      
+        perspective: 1000px;
+        perspective-origin: 50% 50%;
+        
+    }
+    20%{
+       
+       
+        /* background-position: 60px 0px,0px 0px; */
+        transform: scaleX(1) scaleY(1) scaleZ(1) rotateX(0deg) rotateY(-12deg) rotateZ(0deg) translateX(0px) translateY(0px) translateZ(0px) skewX(0deg) skewY(0deg);
+      
+        perspective: 1000px;
+        perspective-origin: 50% 50%;
+        
+    }
+    60%{
+       
+       
+        /* background-position: 60px 0px,0px 0px; */
+        transform: scaleX(1) scaleY(1) scaleZ(1) rotateX(0deg) rotateY(-42deg) rotateZ(0deg) translateX(0px) translateY(0px) translateZ(0px) skewX(0deg) skewY(0deg);
+      
+        perspective: 1000px;
+        perspective-origin: 50% 50%;
+        
+    }
+    80%{
+       
+       
+        /* background-position: 60px 0px,0px 0px; */
+        transform: scaleX(1) scaleY(1) scaleZ(1) rotateX(-2deg) rotateY(8deg) rotateZ(0deg) translateX(0px) translateY(0px) translateZ(0px) skewX(0deg) skewY(0deg);
+      
+        perspective: 1000px;
+        perspective-origin: 50% 50%;
+        
+    }
+    100%{
+       
+       
+        /* background-position: 60px 0px,0px 0px; */
+     
+        transform: scaleX(1) scaleY(1) scaleZ(1) rotateX(0deg) rotateY(32deg) rotateZ(0deg) translateX(0px) translateY(0px) translateZ(0px) skewX(0deg) skewY(0deg);
+      
+        perspective: 1000px;
+        perspective-origin: 50% 50%;
+        
+    }
+    /* 100%{
+       
+       
+        transform: scaleX(1) scaleY(1) scaleZ(1) rotateX(-2deg) rotateY(32deg) rotateZ(0deg) translateX(0px) translateY(0px) translateZ(0px) skewX(0deg) skewY(0deg);
+
+      
+        perspective: 1000px;
+        perspective-origin: 50% 50%;
+        
+    } */
+   
+}
+.topVideoModel{
+    z-index: 9999 !important;
+    /* position: absolute !important; */
+}
+#vid{
+    width: 100% !important;
+    height: 100% !important;
+    height: 85vh !important;
+    /* width: 500px !important; */
+}
+.curatingTxt{
+
+    font-family: 'Barlow';
+font-style: normal;
+font-weight: 500;
+font-size: 61.4198px;
+line-height: 62px;
+/* or 101% */
+
+text-align: center;
+font-family: 'Poppins', sans-serif;
+
+color: #FFFFFF;
+max-width: 583px;
+
+
+}
+.topVideoModel .modal-dialog .modal-content{
+    height: 86vh !important;
+    background: none !important;
+    width: 500px !important;
+    margin: auto;
+
+}
+.topVideoModel .modal-dialog{
+    max-width: unset !important;
+    width: 80% !important;
+
+}
+
+.btnCloseModelVid{
+    /* margin: auto !important; */
+    /* color: #03BABC !important;
+    background-color: #fff !important;
+    width: 190px !important; */
+    color: #fff;
+    font-size: 26px !important;
+    padding: 0px !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    height: 40px !important;
+    width: 40px !important;
+    /* padding: 5px 10px !important; */
+}
+.spnCurating{
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 61.4198px;
+    line-height: 62px;
+    /* or 101% */
+    
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    
+    color: #392679;
+    /* max-width: 483px; */
+
+}
+.headerMdlVid{
+    display: flex !important;
+    justify-content: flex-end !important;
+
+}
+
+.txtHeaderComp{
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20.05px;
+    line-height: 144.5%;
+    /* or 29px */
+    
+    text-align: center;
+    letter-spacing: -0.045em;
+    
+    color: rgb(20, 20, 20);
+    
+font-family: 'Poppins', sans-serif;
+
+max-width: 900px;
+margin: auto;
+margin-top: 2vh;
+
+}
+
+.inestBtn{
+border-radius: 8px;
+width: 280px;
+background-color: #170e35 !important;
+border: 1px solid #170e35;
+height: 50px;
+box-sizing: border-box;
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 17px;
+line-height: 32px;
+
+color: white;
+
+display: flex;
+justify-content: center;
+align-items: center;
+font-family: 'Poppins', sans-serif;
+transition: transform 0.2s;
+
+}
+
+.founderBtn{
+    border-radius: 8px;
+width: 280px;
+height: 50px;
+box-sizing: border-box;
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 17px ;
+line-height: 32px;
+color: #170e35;
+
+display: flex;
+justify-content: center;
+align-items: center;
+border: 1px solid #170e35;
+font-family: 'Poppins', sans-serif;
+transition: transform 0.2s;
+
+}
+.inestBtn:hover{
+    background-color: #392679;
+    color: white;
+    transform: scale(1.05);
+}
+.founderBtn{
+    background-color: white;
+    color: #392679;
+}
+.founderBtn:hover{
+transform: scale(1.05);
+background-color: #f0f0f0 !important;
+
+}
+
+.areYouStak{
+    border: 2px solid #FFFFFF;
+    /* border-radius: 5px 0px 0px 5px; */
+    width: 306px;
+    height: 51px;
+
+    font-family: 'Poppins', sans-serif;
+font-style: normal;
+font-weight: 700;
+font-size: 21.439px;
+line-height: 26px;
+/* identical to box height */
+cursor: pointer;
+
+color: #FFFFFF;
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 12px;
+
+}
+.areYouStak1{
+    background: #FFFFFF;
+    /* border-radius: 0px 5px 5px 0px; */
+    font-family: 'Barlow';
+font-style: normal;
+font-weight: 700;
+font-size: 21.439px;
+width: 306px;
+height: 51px;
+
+font-family: 'Poppins', sans-serif;
+line-height: 26px;
+/* identical to box height */
+cursor: pointer;
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 12px;
+color: #392679;
+
+
+}
+
+.rightArroHdCm{
+    font-size: 33px;
+}
+
+.topButtonFounderInves{
+    display: flex;
+    margin-top: 4vh;
+    gap: 20px;
+}
+
+.inestTxt{
+    font-family: 'Barlow';
+font-style: normal;
+font-weight: 700;
+font-size: 40.29px;
+line-height: 48px;
+margin: auto;
+color: #FFFFFF;
+font-family: 'Poppins', sans-serif;
+
+}
+
+.investFutureTxt{
+    font-family: 'Poppins', sans-serif;
+font-style: normal;
+font-weight: 400;
+font-size: 24.5953px;
+line-height: 30px;
+/* identical to box height */
+
+text-align: center;
+
+color: #FFFFFF;
+cursor: pointer;
+
+}
+
+.regisInte{
+    background: #00D2D4;
+border-radius: 5px;
+
+height: 55.04px;
+width: 260px;
+font-family: 'Poppins', sans-serif;
+font-style: normal;
+font-weight: 700;
+font-size: 20.8759px;
+line-height: 25px;
+/* identical to box height */
+
+
+color: #FFFFFF;
+
+display: flex;
+justify-content: center;
+align-items: center;
+font-family: 'Poppins', sans-serif;
+cursor: pointer;
+margin-top: 20px;
+}
+.tabContectHdComp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 50px;
+}
+
+.Typewriter{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 51.4198px;
+    line-height: 71px;
+    padding-top: 50px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    color: #FFFFFF;
+    max-width: 80vw;
+    margin: auto;
+
+}
+
+.Typewriter__cursor{
+    /* display:none !important; */
+}
+.topTyeWriter .Typewriter .Typewriter__cursor{
+    display: none;
+
+}
+
+
+.spanColored{
+    color:black;
+    max-width: 70vw;
+      }
+      .txtHeaderComp{
+letter-spacing: 1.2px !important;
+      }
+      @media (min-width: 769px) and (max-width: 7000px) {
+        .mainHeaderComponent .blocksOuter {
+            max-width: 90vw !important;
+        }
+    
+        .spanColored{
+            max-width: 70vw !important;
+            font-size: 3.7vw !important;
+            letter-spacing: 1px;
+        }
+        .txtHeaderComp{
+            font-size: 1.3vw !important;
+           
+            max-width: 55vw !important;
+        }
+        
+        .Typewriter{
+            padding-top: 10px !important;
+        
+        }
+    
+      }
+
+
+      @media (min-width: 1711px) and (max-width: 7000px) {
+        .mainHeaderComponent .blocksOuter {
+            max-width: 90vw !important;
+        }
+    
+        .spanColored{
+            max-width: 70vw !important;
+            font-size: 3.7vw !important;
+            letter-spacing: 1px;
+        }
+        .txtHeaderComp{
+            font-size: 1.3vw !important;
+           
+            max-width: 55vw !important;
+        }
+        
+        .Typewriter{
+            padding-top: 10px !important;
+        
+        }
+        .mainHeaderComponent{
+            padding-top: 10vh !important;   
+        }   
+        .mainHeaderComponent .block h2 {
+            font-size: 32px !important;
+            margin-bottom: 10px;
+          }
+          
+         .mainHeaderComponent .block p {
+            font-size: 21px !important;
+            line-height: 1.4;
+            margin-bottom: 5px !important;
+          }     
+          .inestBtn{
+width:350px !important;
+height: 60px !important;
+font-size: 22px !important;
+          }
+          .founderBtn{
+            width: 350px !important;
+            height: 60px !important;  
+            font-size: 22px !important;
+
+        }
+      }
+
+      @media (min-width: 650px) and (max-width: 1310px) {
+        .mainHeaderComponent .blocksOuter {
+            max-width: 90vw !important;
+        }
+    
+        .spanColored{
+            max-width: 80vw !important;
+            font-size: 4vw !important;
+            letter-spacing: 1px;
+        }
+        .txtHeaderComp{
+            font-size: 19px !important;
+           
+            max-width: 60vw !important;
+        }
+        
+        .Typewriter{
+            padding-top: 10px !important;
+        
+        }
+        .mainHeaderComponent{
+            padding-top: 10vh !important;   
+        }   
+        .mainHeaderComponent .block h2 {
+            font-size: 22px !important;
+            margin-bottom: 10px;
+          }
+          
+         .mainHeaderComponent .block p {
+            font-size: 17px !important;
+            line-height: 1.4;
+            margin-bottom: 5px !important;
+          }
+          .mainHeaderComponent {
+            padding-top: 6vh !important;
+        }     
+    
+      }
+
+
+
+
+
+
+@media (max-width: 950px) {
+
+    .inestBtn{
+        min-height: 45px !important;
+
+        border-radius: 5px !important;
+        width: 40vw !important;
+        height: 30px !important;
+        font-size: 16px !important;
+max-width: 220px !important;
+min-width:200px !important;
+
+        }
+        
+        .founderBtn{
+            min-width:200px !important;
+            max-width: 220px !important;
+            min-height: 45px !important;
+            border-radius: 5px !important;
+            width: 40vw !important;
+            height: 30px !important;
+                font-size: 16px !important;
+    
+        }        
+    .spanColored{
+        max-width: 70vw !important;
+        font-size: 5vw !important;
+    }
+
+
+    .txtHeaderComp{
+        font-size: 2.4vw !important;
+        max-width: 80vw !important;
+        letter-spacing: 0.9px !important;
+    }
+
+
+
+
+}
+
+
+@media (max-width:650px) {
+
+    .spanColored{
+        max-width: 75vw !important;
+        font-size: 6vw !important;
+    }
+
+
+    .txtHeaderComp{
+        font-size: 3.2vw !important;
+        max-width: 80vw !important;
+        letter-spacing: 1px !important;
+    }
+
+
+.Typewriter {
+   
+    font-size: 32.4198px;
+   
+    max-width: 340px;
+    line-height: 40px;
+    margin: auto;
+}
+.txtHeaderComp {
+   
+    font-size: 15.05px;
+
+
+    max-width: 303px;
+    margin: auto;
+    margin-top: 20px;
+    /* margin-top: 10px; */
+}
+.topButtonFounderInves {
+   
+    flex-direction: column;
+    gap: 19px;
+    margin-top: 39px;
+}
+.areYouStak {
+    width: 229px;
+    height: 40px;
+    font-size: 16px;
+}
+.areYouStak1 {
+    width: 229px;
+    height: 40px;
+    font-size: 16px;
+}
+.rightArroHdCm {
+    font-size: 23px;
+}
+.mainHeaderComponent{
+    padding-top: 21px;
+}
+.inestTxt {
+    font-size: 29px;
+}
+.investFutureTxt {
+    font-size: 20px;
+}
+.regisInte{
+    height: 40px;
+    width: 219px;
+    font-size: 16px;
+}
+.mainHeaderComponent{
+    /* height: 720px; */
+}
+.innerHeaderCompBack{
+    height: 80vh;
+}
+.topVideoModel .modal-dialog{
+    width: 100% !important;
+    margin: 0px !important;
+}
+.topVideoModel .modal-dialog .modal-content{
+    width: 100% !important;
+}
+.topVideoModel .modal-dialog .modal-content .modal-body{
+    padding: 0px !important;
+
+}
+}
+
+
+@media (max-width:450px) {
+
+    .spanColored{
+        max-width: 75vw !important;
+        font-size: 6.5vw !important;
+    }
+
+
+    .txtHeaderComp{
+        font-size: 3.5vw !important;
+        max-width: 80vw !important;
+        letter-spacing: 1px !important;
+    }
+
+}
+
+@media (max-width:640px) {
+
+.whtCrypHeading{
+    margin-bottom: 0px !important;
+}
+
+.txtHeaderComp{
+    padding-bottom: 0px !important;
+}
+
+.specialcasee{
+    padding-bottom: 30px !important;
+}
+.box p {
+    font-size: 3.5vw !important;
+    line-height: 1.5 !important;
+}
+.block p{
+    font-size: 3.5vw !important;
+    line-height: 1.5 !important;   
+}
+
+
+}
+@media (min-width: 1314px) and (max-width: 7000px) {
+.mainHeaderComponent .block {
+    min-width: 380px; /* Minimum width to control shrink */
+    max-width: 380px !important;
+  }
+}
+
+
+.mainHeaderComponent video::-webkit-media-controls {
+    display: none !important;
+  }
+
+
+
+  @media (max-width: 1399px){
+    .container2222{
+      max-width: 100% !important;
+    }  
+    
+    }
+
+    @media (max-width: 1399px){
+        .container22224{
+          max-width: 90% !important;
+        }  
+        
+        }
+    
+
+
+.uniquePadding{
+    padding-bottom: 20px !important;
+}
+
+@media (min-width: 250px) and (max-width: 477px) {
+
+    .container3333{
+      max-width: 84vw !important;
+    }
+    }
+
+
+@media (min-width: 1500px) and (max-width: 4000px) {
+    .mainHeaderComponent .blocks {
+        margin-bottom: 2vh !important;
+        
+      }
+}    
+@media (min-width: 250px) and (max-width: 777px) {
+
+.innerHeaderCompBack{
+
+    /* height:80vh; */
+    
+    width: 100%;
+    /* background-image: url('./../../images/back2.png'); */
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top;
+    display: flex;
+    position: relative;
+    z-index: 999;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+    padding-top: 2vh;
+    padding-bottom: 4vh;
+
+    /* gap: 40px; */
+
+}
+}

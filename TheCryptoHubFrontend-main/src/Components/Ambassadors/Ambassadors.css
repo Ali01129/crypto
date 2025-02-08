@@ -1,0 +1,473 @@
+.ourAmbTxt{
+
+    font-family: 'Barlow';
+font-style: normal;
+font-weight: 700;
+font-size: 50.0711px;
+line-height: 60px;
+margin-bottom: 14px;
+/* identical to box height */
+font-family: 'Barlow', sans-serif;
+
+
+color: #262632;
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 46.07px;
+line-height: 69px;
+
+color: #262632;
+}
+
+.txtAmbTop{
+    font-family: 'Barlow';
+font-style: normal;
+font-weight: 400;
+font-size: 22.52px;
+line-height: 27px;
+text-align: center;
+
+color: #515151;
+font-family: 'Barlow', sans-serif;
+
+max-width: 800px;
+margin-top: 22px;
+}
+
+.topSliderBox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* gap: 20px; */
+}
+
+.joinAmbBtn{
+    /* width: 309px;
+height: 67px; */
+
+
+background: #111111;
+border-radius: 6.34px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 20.84px;
+line-height: 31px;
+
+color: #FFFFFF;
+display: flex;
+justify-content: center;
+align-items: center;
+
+
+margin: auto;
+height: 51px;
+width: 309px;
+/* padding: 16px 19px; */
+}
+
+.sliderCardAmb{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.sliderCardAmb{
+    /* background-image: url('./../../images/sliderback.png'); */
+    width: 250px;
+    height: 310px;
+    background-size: cover;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.headingSlider{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15.3356px;
+    line-height: 23px;
+    /* identical to box height */
+    text-align: center;
+    
+    margin-top: 10px;
+    color: rgba(30, 30, 30, 0.68);
+    
+
+
+
+}
+.sliderImgM{
+    /* height: 88%;
+    width: 85%; */
+    /* margin: auto; */
+}
+.sliderDec{
+   
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 10.8776px;
+line-height: 16px;
+text-align: center;
+margin-top: 3px;
+color: rgba(30, 30, 30, 0.68);
+
+}
+
+.topIconsAmb{
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+    justify-content: center;
+}
+.topIconsAmb img{
+    width: 20px;
+    opacity: .6;
+
+}
+.sliderCard{
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    width: 70% !important; 
+     justify-content: center !important;
+}
+
+.topBottomTxtSliderPr{
+    width: 257px !important;
+}
+.slick-track{
+    display: flex !important;
+    align-items: center;
+}
+
+.mainSlidersTop .slick-slider .slick-list .slick-track .slick-slide{
+
+    /* width: 300px !important; */
+}
+.slick-current{
+    /* background-color:  red;
+    height: 500px;
+    border: 1px solid; */
+}
+
+
+.sliderCardAmb{
+    border-radius: 50%;
+}
+.mainContainerAmb{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin-bottom: 61px;
+}
+.slick-arrow{
+    display: block;
+    height: 40px;
+    width: 40p;
+    width: 40px;
+    right: -5%;
+    top: 50%;
+    /* background: red; */
+}
+.slick-next::before{
+    content: url('./../../images/next.png') !important;
+}
+.slick-prev{
+
+    display: block;
+    height: 40px;
+    width: 40p;
+    width: 40px;
+    right: 2%;
+    top: 50%;
+    /* background: red; */
+    display: block;
+    left: -5% !important;
+    /* right: 7%; */
+z-index: 9;
+
+}
+
+.slick-prev::before{
+    content: url('./../../images/previous.png') !important;
+}
+
+.mainSlidersTop{
+
+    width: 90%;
+    margin: auto;
+    max-width: 1300px;
+
+}
+
+.sliderImgM{
+    width: 130px;
+    opacity: .7;
+    border-radius: 50%;
+    height: 111px;
+}
+
+
+.slick-current div .sliderCard .sliderImgM{
+
+    width: unset;
+    opacity: unset;
+    width: 250px;
+    border-radius: 5%;
+    height: 300px;
+    object-fit: cover;
+
+}
+.slick-current div .sliderCard  .topBottomTxtSliderPr .headingSlider{
+    font-family: sans-serif;
+    font-weight:400;
+    font-style: normal;
+    
+    
+    color: #1E1E1E;
+    
+/* line-height: 33px; */
+/* identical to box height */
+text-align: center;
+
+
+}
+.slick-current div .sliderCard  .topBottomTxtSliderPr .sliderDec{
+   
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1rem;
+margin-bottom: 0px !important;        
+        color: #1E1E1E;
+    text-align: center;
+    
+
+
+}
+
+.slick-current div .sliderCard  .topBottomTxtSliderPr  .topIconsAmb img{
+   
+       width: unset;
+       opacity: unset;
+    
+
+
+}
+
+@media (max-width:1458px) {
+    .slick-prev{
+
+        left: 5% !important;
+      
+    }
+    .slick-next{
+
+        right: 5% !important;
+      
+    }
+
+    
+}
+
+@media (max-width:1230px) {
+    .slick-arrow{
+        
+        right: 6%;
+       
+    }
+  
+    .slick-prev{
+    
+       
+        right: 11%;
+      
+    
+    
+    }
+    
+    
+}
+
+@media (max-width:1086px) {
+    .leadingCrypTxt 
+    {
+        font-size: 16px;
+    }
+    .ourParTxt {
+        font-size: 36px;
+    }
+    
+}
+@media (max-width:934px) {
+    .slick-arrow{
+        
+        right: 10%;
+       
+    }
+  
+    .slick-prev{
+    
+       
+        right: 16%;
+      
+    
+    
+    }
+    .leadingCrypTxt{
+        max-width: 500px;
+        margin: auto;
+        padding: 0px 20px;
+        
+    }
+    .mainAutoSlider{
+        height: auto;
+        padding-bottom: 50px;
+    }
+    
+}
+
+@media (max-width:600px) {
+
+    .joinAmbBtn {
+        /* width: 229px; */
+        height: 52px;
+       font-size: 18px;
+        color: #FFFFFF;
+
+    }
+
+    .ourAmbTxt {
+        font-size: 33px;
+    }
+.txtAmbTop {
+    font-size: 18px;
+    padding: 0px 20px;
+}
+    
+.slick-arrow{
+        
+    /* right: -2% !important; */
+   
+}
+
+.slick-prev{
+
+   
+    left: -1% !important;
+  
+
+
+}
+.slick-next{
+
+   
+    right: -1% !important;
+  
+
+
+}
+.sliderCard{
+    width: 300px !important;
+}
+.slick-current div .sliderCard .sliderImgM{
+    width: 250px;
+}
+}
+
+
+
+
+.sliderCard{
+    background-color: transparent !important;
+}
+
+.topBottomTxtSliderPr {
+    position: absolute;
+    bottom: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100% !important;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.3); /* Slightly darkens the overlay */    padding: 1px;
+    border-radius: 0px;
+    color: white; /* Ensures text contrasts on dark background */
+}
+
+
+@media (max-width:968px) {
+    .topBottomTxtSliderPr {
+        position: absolute;
+        bottom: 60px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 250px !important;
+        text-align: center;
+        background: rgba(0, 0, 0, 0.3); /* Slightly darkens the overlay */    padding: 1px;
+        border-radius: 0px;
+        color: white; /* Ensures text contrasts on dark background */
+    }
+    
+
+}
+
+
+.headingSlider {
+    font-size: 1.1rem;
+    font-family: sans-serif;
+    font-weight:400;    margin: 3px 0;
+    color: rgb(243, 243, 243) !important;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Adds depth to text */
+}
+
+
+.sliderDec {
+    font-family: sans-serif !important;
+    font-size: 1rem;
+    color: rgb(243, 243, 243) !important;
+    margin-bottom: 0px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7); /* Subtle shadow for visibility */
+}
+
+.topIconsAmb {
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Increased spacing for better visual balance */
+    margin-bottom: 5px;
+}
+
+.topIconsAmb img {
+    width: 20px; /* Slightly larger icons */
+    height: 20px;
+    filter: invert(1); /* Ensures white icons for visibility */
+    cursor: pointer;
+    transition: transform 0.3s ease, filter 0.3s ease; /* Smooth hover effect */
+}
+
+.topIconsAmb img:hover {
+    transform: scale(1.1); /* Slightly enlarges on hover */
+    filter: invert(0.8); /* Adjusts brightness for emphasis */
+}
+
+@media (min-width:1100px) and (max-width:7000px) {
+    .topBottomTxtSliderPr {
+        position: absolute;
+        bottom: 60px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 250px !important;
+        text-align: center;
+        background: rgba(0, 0, 0, 0.3); /* Slightly darkens the overlay */    padding: 1px;
+        border-radius: 0px;
+        color: white; /* Ensures text contrasts on dark background */
+    }
+    
+
+}

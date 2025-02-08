@@ -1,0 +1,205 @@
+.containerSideBar{
+    display:flex;
+  min-height: 100vh;
+    position: relative;
+    /* z-index: 99; */
+
+
+}
+.link .icon{
+padding-top: 5px !important;
+}
+.text-blue-500 {
+color: blue !important;
+word-break: break-all !important;
+}
+.text-blue-700 {
+    color: blue !important;
+    word-break: break-all !important;
+    }
+    
+
+main{
+    width: 100%;
+    padding: 20px;
+}
+.sidebar{
+    background: #03BABC!important;
+    color: #fff;
+    height: auto;
+    width: 200px;
+    transition: all 0.5s;
+    position: relative;
+    z-index: 99;
+}
+.top_section{
+    display: flex;
+    align-items:center;
+    padding:20px 15px;
+    justify-content: space-between;
+}
+.logo{
+    font-size: 30px;
+}
+.bars{
+    display: flex;
+    font-size: 25px;
+    margin-left: 50px;
+}
+.bars svg{ 
+    cursor: pointer;
+
+}
+.link{
+    display: flex;
+    color: #fff;
+    padding: 10px 15px;
+    gap: 15px;
+    transition: all 0.5s;
+}
+.link:hover{
+    background:#4169e1;
+    color: #fff;
+    transition: all 0.5s;
+}
+.active{
+    color: #fff;
+}
+.icon, .link_text{
+    font-size: 20px;
+}
+
+.divToLevel{
+    margin-top: 43px;
+}
+.offCanvasMobile{
+    display: none;
+}
+
+@media (max-width:991px) {
+
+.right-20 {
+    right: 1rem !important;
+}
+}
+
+@media (max-width:991px) {
+    .containerSideBar{
+        display: none;
+    }
+    .containerSideBarOffCan{
+        display:flex;
+      
+        position: relative;
+        /* z-index: 99; */
+    
+    
+    }
+    .offcanvas.hiding, .offcanvas.show, .offcanvas.showing {
+        background-color: #03babc !important;
+       
+    }
+    .offcanvas-body {
+        flex-grow: 1;
+        padding: var(--bs-offcanvas-padding-y) var(--bs-offcanvas-padding-x);
+        overflow-y: auto;
+    }
+    
+    .offcanvas-body::-webkit-scrollbar {
+        width: 10px; /* adjust as needed */
+    }
+    
+    .offcanvas-body::-webkit-scrollbar-track {
+        background-color: #03babc; /* grey background color */
+    }
+    
+    .offcanvas-body::-webkit-scrollbar-thumb {
+        background-color: #888; /* grey color for the scrollbar */
+    }
+    .offCanvasAdminSidebar {
+        background-color:#03babc !important ;
+    }
+    
+    .offcanvas.offcanvas-start {
+        background-color:#03babc !important ;
+    }
+    .offCanvasMobile{
+        display: block;
+        position: fixed;
+        z-index: 99;
+        width: 69px;
+        left: 27px;
+        top: 6px;
+    
+    
+
+    }
+    
+    .offCanvasMobile .navbar{
+        background-color: #ffff !important;
+        box-shadow: none !important;
+    
+
+    }
+
+    .offCanvasMobile nav .container-fluid{
+        background-color: #fff !important;
+
+
+    }
+    .offCanvasMobile nav .container-fluid .navbar-toggler{
+   /* padding: 0px !important; */
+margin-top: 5px;
+
+    }
+    
+}
+
+.offcanvas.show:not(.hiding), .offcanvas.showing {
+    transform: none;
+    width:auto !important;
+    background-color: #03BABC !important;
+}
+
+
+
+
+.offcanvas-body::-webkit-scrollbar {
+    width: 10px !important; /* adjust as needed */
+}
+
+.offcanvas-body::-webkit-scrollbar-track {
+    background-color: #03babc !important; /* grey background color */
+}
+.nowrapp{
+    flex-wrap: nowrap !important;
+}
+.offcanvas-body::-webkit-scrollbar-thumb {
+    background-color: #888 !important; /* grey color for the scrollbar */
+}
+.offcanvas-body {
+    background-color:#03babc !important ;
+}
+.btnSearchVehicle{
+    width:auto !important;
+    padding-right: 10px !important;
+}
+
+
+@media (max-width:450px) {
+    .containerSideBarOffCan div{
+       
+    }
+    
+    .offCanvasMobile {
+       
+        left: 3px;
+        top: 11px;
+    }
+    .offCanvasAdminSidebar{
+        width: 300px !important;
+    }
+    .offcanvas-body{
+        padding: 0px !important;
+    }
+}

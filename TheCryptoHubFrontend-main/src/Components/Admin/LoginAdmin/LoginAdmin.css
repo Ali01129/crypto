@@ -1,0 +1,104 @@
+.userLoginTxt{
+    height: 85px;
+    font-family: "Montserrat" !important;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 35px;
+    line-height: 85px;
+    text-align: center;
+    color: black;
+    margin-bottom: 10px;
+    z-index: -1;
+
+}
+
+.topInputFieldLogin{
+    display: flex;
+    flex-direction: column;
+}
+
+.inputTxtLogin{
+    
+    font-size: 14px;
+    font-weight: 700;
+    color: #fff;
+    font-family: "Nunito,sans-serif";
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+
+
+}
+.inputLogins{
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+    border-radius: 6px;
+    box-shadow: none;
+    color: #3c4858;
+    font-size: 13px;
+    height: 42px;
+    transition: all .5s ease;
+    padding-left: 10px;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+@media (max-width: 650px){
+.mainContainerLogin {
+    width: 98%;
+    margin: auto;
+    height: 550px !important;
+}
+}
+
+.mainContainerLogin{
+    width: 600px;
+    margin: auto;
+    height: 80vh;
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 22px;
+}
+
+.loginBtn{
+
+    border: none;
+    border-radius: 5px;
+    width: 200px;
+    height: 50px;
+    border: none;
+        color: #fff;
+    background-color: black;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.forgotPassTxt{
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+
+}
+
+.ntMemberTxt{
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.spCreatAccnt{
+
+    color: #2a9df4;
+
+}
+
+@media (max-width:650px) {
+    .mainContainerLogin{
+        width: 98%;
+        height: 450px;
+    }
+    .userLoginTxt{
+        font-size: 20px;
+    }
+    
+}

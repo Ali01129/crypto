@@ -1,0 +1,180 @@
+.mainPlatform{
+    /* padding: 100px 0px; */
+    padding-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+.cardPlatform{
+    width: 350px;
+    height: 300px;
+    background-image: url('./../../images/apply.jpg');
+    background-color: red;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    /* background-position: center; */
+
+}
+.cardPlatform1{
+    width: 350px;
+    height: 300px;
+    background-image: url('./../../images/apply1.jpg');
+    background-color: red;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    /* background-position: center; */
+
+}
+
+.cardPlatformInner{
+    width: 100%;
+    /* position: absolute; */
+
+    height: 100%;
+    background-color: rgb(8 13 20 / 70%);
+    border-radius: 10px;
+
+    display: flex;
+    padding-top: 50px;
+    justify-content: center;
+
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.platFormHeader{
+    font-size: 40px;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+
+.btnPlatCard{
+
+    width: 150px;
+    height: 50px;
+    color: #fff;
+    font-size: 25px;
+    background-color:#2a9df4;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    cursor: pointer;
+    align-items: center;
+    gap: 25px;
+    
+}
+.btnPlatCard:hover .rightArrowBtn{
+    animation: hoverEffect1 1s 1;
+
+}
+
+@keyframes hoverEffect1 {
+    0%{
+      transform:translateX(0px);
+  /* rotate: 90deg; */
+    }
+    50%{
+      transform:translateX(25px);
+      opacity: 0;
+  
+    }
+    70%{
+      transform:translateX(-30px);
+  opacity: 0;
+    }
+    100%{
+  
+      transform:translateX(0px);
+  opacity: 1;
+  /* 
+  to{}
+  from{}
+  */
+    }
+  }
+  .home-content--btn{
+    margin-top: 2.5rem;
+    position: relative;
+    overflow: hidden;
+    width: fit-content;
+  }
+  
+  .content-btn--inner{
+    /* padding: 0.75rem 3rem; */
+    font-family: "Sarabun";
+    font-weight: 600;
+    font-style: normal;
+    /* font-size: 20px; */
+    /* line-height: 28px; */
+    color: #000000;
+    background-color: black;
+    border: none;
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    padding: 0 10px;
+    align-items: center;
+    border-radius: 2px;
+    cursor: pointer;
+  }
+  .content-btn--inner p{
+    position: relative;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-family: 'Montserrat', sans-serif;
+    /* font-family: 'Poppins', sans-serif; */
+    margin: 0px;
+    z-index: 1;
+  }
+  
+  .home-content--btn:hover  .content-btn--inner   {
+  /* color: #000000 !important;
+  transition: color 0.4s; */
+  border: 1px solid black !important;
+  
+  }
+  .home-content--btn:hover  .content-btn--inner p  {
+  color: #000000 !important;
+  transition: color 0.4s;
+  font-weight: 600;
+  
+  
+  }
+  
+  .hover-btn{
+    position: absolute;
+    height: 100%;
+    width: 100%; 
+  }
+  
+  .home-content--btn:hover .hover-btn{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 1);
+    animation: swipe 0.4s ease-in-out 1;
+    border: 2px solid black;
+  
+  }
+  @keyframes swipe {
+    0%{width: 0%;}
+    100%{width: 100%;}
+  }
+  
+
+
+  
+@media (max-width:745px) {
+
+    .mainPlatform{
+        flex-direction: column;
+        align-items: center;
+    }
+}

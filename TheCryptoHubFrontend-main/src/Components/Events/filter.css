@@ -1,0 +1,194 @@
+.filters-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .filter-item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-right: 15px;
+    margin-bottom: 20px;
+  }
+  
+  .date-picker-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  
+  .date-input-from,
+  .date-input-to {
+    width: 200px;
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .calendar-icon {
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+    color: #888;
+  }
+  
+  .dropdown-input {
+    width: 200px;
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .search-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin: 0 auto;
+  }
+  
+  .search-input {
+    width: 290px;
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .search-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    color: #333;
+    position: absolute;
+    right: 10px;
+  }
+  .top-picks-container {
+    background-color: #333;
+    display: flex;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .top-picks-text {
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  .top-picks-image-container {
+    margin-top: 10px;
+    display: flex;
+    width: 100%;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    margin-bottom: 10px !important;
+    cursor: pointer;
+    
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    /* Animation to slide in from the right */
+    animation: slide-in-right 0.6s ease-out;
+}
+
+.top-picks-image-container:hover {
+    transform: scale(1.05);
+    
+}
+
+/* Keyframes for the slide-in animation */
+@keyframes slide-in-right {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+  
+  .top-picks-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  
+
+  @media (max-width: 1300px) {
+    .search-container {
+      margin: 0;
+    }
+    .top-picks-container {
+      margin:0;
+      width: 100%;
+    }
+    .top-picks-image-container {
+      margin: 0;
+      width: 100%;
+    }
+  }
+
+  @media (max-width: 1230px) {
+    .search-input {
+      width: 270px;
+    }
+    .top-picks-container {
+      margin:0;
+      width: 100%;
+    }
+    .top-picks-image-container {
+      margin: 0;
+      width: 100%;
+    }
+  }
+
+  @media (max-width: 1210px) {
+    .search-input {
+      width: 260px;
+    }
+    .top-picks-container {
+      margin:0;
+      width: 100%;
+    }
+    .top-picks-image-container {
+      margin: 0;
+      width: 100%;
+    }
+    .dropdown-input {
+      width: 190px;
+    }
+    .date-input-from,
+    .date-input-to {
+      width: 190px;
+    }
+  }
+
+  @media (max-width: 1210px) {
+    .search-input {
+      width: 260px;
+    }
+    .top-picks-container {
+      margin:0;
+      width: 100%;
+    }
+    .top-picks-image-container {
+      margin: 0;
+      width: 100%;
+    }
+    .dropdown-input {
+      width: 180px;
+    }
+    .date-input-from,
+    .date-input-to {
+      width: 180px;
+    }
+  }

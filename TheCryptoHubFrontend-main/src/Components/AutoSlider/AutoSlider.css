@@ -1,0 +1,73 @@
+.mainAutoSlider{
+/* margin-bottom: 100px; */
+    height: 130px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+background-color: #170e35;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; */
+}
+
+#root{
+    overflow: hidden !important;
+}
+
+.leadingCrypTxt{
+
+ 
+    text-align: center;
+  
+font-style: normal;
+font-weight: 600;
+font-size: 22.67px;
+font-family: 'Open Sans', sans-serif !important;
+line-height: 31px;
+/* identical to box height */
+
+
+color: #FFFFFF;
+
+
+}
+.topOurParLine{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.sliderImgAuto{
+    width: 100px;
+    height: 40px;
+    
+    object-fit: contain;
+}
+
+.topSliderImgAut{
+    display: flex !important;
+    justify-content: center;
+}
+.mainAutoSlider div .slick-slider .slick-arrow{
+    display: none !important;
+}
+.ourParTxt{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 46.07px;
+    line-height: 69px;
+    
+    color: #FFFFFF;
+    
+
+
+}
+@media (max-width:600px) {
+    .leadingCrypTxt {
+        font-size: 16px;
+        padding: 0 20px;
+    }
+    
+}

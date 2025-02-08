@@ -1,0 +1,86 @@
+
+.mainHomTopBar {
+    background-color: #FFD733;
+    height: auto;
+    position: relative;
+    width: 100%;
+    display: flex;
+    z-index: 9;
+    padding: 10px 45px !important;
+    justify-content: center;
+    /* position: fixed; */
+    top: 0px;
+    align-items: center;
+}
+.txtmainHomeTp{
+    color: #000;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 25px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+
+}
+.spTopBar{
+  
+    font-weight: 700;
+
+}
+
+.spTopBarEnd{
+    border-bottom: 1px solid;
+}
+.crossTopBar{
+    font-size: 40px;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+    position: absolute;
+    left: 20px;
+    top: -15px;
+    /* top: 1%; */
+}
+
+@media (max-width:1072px) {
+    .txtmainHomeTp {
+        font-size: 12px;
+    }
+    
+}
+
+@media (max-width:991px) {
+
+    .txtmainHomeTp{
+        max-width: 600px;
+        padding: 5px 5px;
+
+    }
+    .mainHomTopBar{
+        height: auto;
+    }
+    .mainHomTopBar {
+padding:10px 30px !important; ;
+    }
+
+    
+}
+@media (max-width:600px) {
+
+    .txtmainHomeTp{
+        max-width: 350px;
+      
+
+    }
+
+    .crossTopBar{
+        font-size: 28px;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+    position: absolute;
+    left: 5px;
+    top: -5px;
+    /* top: 1%;*/
+    }
+
+
+    
+}

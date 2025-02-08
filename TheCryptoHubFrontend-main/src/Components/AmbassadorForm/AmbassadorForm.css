@@ -1,0 +1,14 @@
+.topRadioButton{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.topRadioButton div{
+   color: black;
+   font-size: 22px;
+}
+.topRadioButton input[type='radio'] {
+    accent-color: #232323;
+    width: 20px;
+    height: 20px;
+}

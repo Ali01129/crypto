@@ -1,0 +1,176 @@
+import React, { useState, useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { deletePartner } from "../../../redux/CustomerReducer";
+import axios from "axios";
+import { SERVERURL } from "../../../ServerUrl";
+import Swal from "sweetalert2";
+import { RiDeleteBin6Line } from "react-icons/ri";
+import EditAmbassadorDrawer from "../EditAmbassadorDrawer/EditAmbassadorDrawer";
+
+export default function AmbassadorsData(props) {
+  const [deleteVeh, setDeleteVeh] = useState(0);
+  const [filtered2, setFiltered2] = useState([]);
+  const [Index, setIndex] = useState();
+  const [flag, setFlag] = useState();
+  const [alertIndex, setAlertIndex] = useState();
+  const dispatch = useDispatch();
+
+  const updateFilteredData = () => {
+    if (props.driverData) {
+      const newFilteredData = props.driverData.filter(
+        (item) =>
+          item.verified === false &&
+          item.verifieduser === true &&
+          item.category === "ambassador"
+      );
+      setFiltered2(newFilteredData);
+    }
+  };
+
+  useEffect(() => {
+    updateFilteredData();
+  }, [props.driverData]);
+
+  const verifyClicked = async (index, id, row) => {
+    console.log(index, id); //mongoid, array index
+    console.log(row); //that particular object
+  
+    Swal.fire({
+      title: '',
+      text: 'Are you sure to verify ' + row.fullName + '?',
+      icon: 'info', // Change 'alert' to 'info' for the icon
+      showCancelButton: true,
+      confirmButtonColor: '#3085d6',
+      cancelButtonColor: '#d33',
+      confirmButtonText: 'Yes, Verify it!'
+    }).then(async (result) => { // Add 'async' before (result)
+      if (result.isConfirmed) {
+        try {
+         
+  
+          const token = localStorage.getItem('token'); 
+          const headers = {
+            'Authorization': `Bearer ${token}`, // Corrected header format
+          };
+
+
+          const response = await axios.post(`${SERVERURL}/api/v1/verifySpecialUser`,{id:index}, {
+            headers: headers, // Include the headers object in the request configuration
+          });
+    
+              if(response.data.success === true)
+              {
+               
+            // Update the state or perform any action on successful verification
+            Swal.fire(
+              '',
+              'Verification Done!',
+              'success'
+            );
+
+            setDeleteVeh(2);
+            let zz = filtered2.filter((item) => item.fullName !== row.fullName);
+            setFiltered2(zz);
+          }
+          else
+          {
+            if(response.data.success === false)
+            {
+              Swal.fire(
+                '',
+                response.data.message,
+                'error'
+              )
+            }
+          }
+        } catch (error) {
+          console.log("response 4", error.response)
+          if (error.response.data.message) {
+            console.error(error.response);
+            Swal.fire({
+              title: "",
+              text: error.response.data.message,
+              icon: 'error', // Change 'Error' to 'error' for the icon
+              showCancelButton: true,
+              cancelButtonColor: '#d33',
+            })
+          }
+        }
+      }
+    });
+  
+    setAlertIndex(id); // Setting alert index
+  };
+  return (
+    <div>
+      <div className="overflow-x-auto">
+      <table className="min-w-full divide-y divide-gray-200">
+        <thead className="bg-gray-50">
+          <tr>
+            <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+              Name
+            </th>
+            <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+              Title
+            </th>
+            <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+              Email
+            </th>
+            <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+              Location
+            </th>
+            <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+              Twitter
+            </th>
+            <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+              LinkedIn
+            </th>
+            <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+              Phone
+            </th>
+            <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+              Verification
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          {filtered2.map((row, idx) => (
+            <tr key={row.fullName} className="border-b border-gray-200 transition-colors hover:bg-gray-100">
+              <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
+                {row.fullName}
+              </td>
+              <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                {row.title}
+              </td>
+              <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                {row.email}
+              </td>
+              <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                {row.location}
+              </td>
+              <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                <a href={row.twitter} className="text-blue-500 hover:underline" target="_blank" rel="noopener noreferrer">
+                  Link here
+                </a>
+              </td>
+              <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                <a href={row.linkedIn} className="text-blue-500 hover:underline" target="_blank" rel="noopener noreferrer">
+                  Link here
+                </a>
+              </td>
+              <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                {row.phone}
+              </td>
+              <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+              <span className="text-blue-500 cursor-pointer inline-block py-2 px-3 rounded-lg bg-blue-100 hover:bg-blue-200" onClick={() => verifyClicked(row._id, idx, row)}>
+  Verify
+</span>
+              </td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+      </div>
+    </div>
+  );
+}

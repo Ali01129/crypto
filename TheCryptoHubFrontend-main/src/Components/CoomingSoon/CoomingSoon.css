@@ -1,0 +1,20 @@
+.mainComingSoon{
+    height: 90vh;
+    width: 100%;
+    background-color: #ffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.comingSoonTxt{
+    font-size: 80px;
+color: #03BABC;
+}
+
+@media (max-width:600px) {
+    .comingSoonTxt {
+        font-size: 50px;
+    }
+    
+}

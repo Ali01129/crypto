@@ -1,0 +1,82 @@
+.before-filter-container{
+    padding-left: 5%;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+}
+.left-before-filter-container{
+    flex: 0 0 73%;
+    padding-right: 20px; 
+}
+.main-tagline-eventlisting{
+    margin-top: 20px;
+    font-weight: bold;
+    margin-bottom:30px;
+}
+.right-side-before-footer-container{
+    flex: 0 0 22%;
+}
+
+.just-for-the-filter{
+    margin:0;
+}
+
+
+@media (max-width: 1300px) {
+    .left-before-filter-container{
+        flex: 0 0 73%;
+        padding-right: 20px; 
+    }
+    .right-side-before-footer-container{
+        flex: 0 0 22%;
+    }
+    .before-filter-container{
+        padding-left: 3%;
+    }
+}
+
+@media (max-width: 1200px) {
+    .before-filter-container{
+        
+    }
+}
+
+@media (max-width: 1160px) {
+    .before-filter-container{
+        
+    }
+    .left-before-filter-container{
+        flex: 0 0 73%;
+        padding-right: 16px; 
+    }
+    .right-side-before-footer-container{
+        flex: 0 0 22%;
+    }
+}
+
+@media (max-width: 1118px) {
+    .right-side-before-footer-container{
+        display: none;
+    }
+    .left-before-filter-container{
+        flex:0 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (max-width: 850px) {
+    
+    .just-for-the-filter{
+        display: none;
+    }
+}
+
+@media (max-width: 550px) {
+    .main-tagline-eventlisting{
+        font-size: 20px;
+        margin-top: 20px;
+        font-weight: bold;
+        margin-bottom:30px;
+    }   
+}

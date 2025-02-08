@@ -1,0 +1,78 @@
+.card-main-click-container {
+    width: 100%;
+    cursor: pointer; 
+    position: relative;
+    overflow: hidden;
+    transition: max-height 0.8s ease-in-out;
+}
+
+
+.card-main-click-container.expanded {
+    max-height:520px !important;
+}
+
+.card-main-click-container.collapsed {
+  max-height: 150px;
+}
+  
+.inner-card-main-container{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #dacfcf;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    height: 80px;
+    width: 60px;
+}
+
+.inner-card-main-container .month-text {
+    font-size: 12px;
+}
+
+.container-before-flag-location{
+    margin-left: 30px;
+    flex: 1;
+}
+
+
+.flag-of-country-inside{
+    width: 32px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.expansion-read-more-button-hidden{
+    margin: 0;
+    padding: 10px;
+    border: none;
+    background-color: #cea525;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.horizontal-line-at-the-end{
+    border-top: 1px solid #333;
+    width: 100%;
+    margin: 20px 0;
+}
+
+
+@media (max-width: 1160px) {
+    .card-main-click-container {
+        width: 80%;
+    }
+}
+
+@media (max-width: 1160px) {
+    .card-main-click-container {
+        width: 100%;
+        margin-left: 10px;
+    }
+}
+
+.card-main-click-container {
+    width: 97% !important; 
+}

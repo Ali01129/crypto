@@ -1,0 +1,28 @@
+.txtPrivacyHead{
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 35px;
+line-height: 69px;
+text-align: center;
+color: #000000;
+
+}
+
+.topTextPriPart{
+    width: 70%;
+    margin: auto;
+
+}
+
+.mainPrivacyPolicy{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+@media (max-width:600px) {
+    .topTextPriPart {
+        width: 90%;
+    }
+    
+}

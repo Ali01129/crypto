@@ -1,0 +1,211 @@
+.whyJoinCrHd{
+    font-family: 'Barlow';
+font-style: normal;
+font-weight: 700;
+font-size: 50.0711px;
+line-height: 60px;
+/* identical to box height */
+font-family: 'Barlow', sans-serif;
+/* margin-top: 30px; */
+
+color: #262632;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 46.07px;
+line-height: 69px;
+
+color: #262632;
+
+}
+
+.domainExprTxt{
+    font-family: 'Barlow', sans-serif;
+font-style: normal;
+font-weight: 600;
+font-size: 30.07px;
+line-height: 36px;
+
+/* identical to box height */
+margin-top: 19px;
+
+color: #262632;
+
+
+}
+
+.txtWhyCrPara{
+    font-family: 'Barlow', sans-serif;
+font-style: normal;
+font-weight: 400;
+font-size: 22.52px;
+margin-top: 7px;
+line-height: 27px;
+max-width: 524px;
+
+color: #515151;
+
+
+}
+.cardWhyCrypTop{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 60px;
+    align-items: center;
+    /* padding-left: 109px; */
+}
+.cardWhyCryp{
+    display: flex;
+    flex-direction: column;
+    /* width: 50%; */
+    justify-content: center;
+    align-items: start;
+    
+}
+
+.topLeftWhyCr{
+    /* width: 100%; */
+    display: flex;
+    flex-direction: column;
+    align-items:self-start;
+    justify-content:start;
+    
+    align-items: center;
+}
+.topLeftWhyCrFix{
+    /* width: 100%; */
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    justify-content:start;
+    align-items:self-start;
+    position: fixed;
+    top:400px;
+}
+.topLeftWhyCrTop{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: self-start;
+    padding-left: 8%;
+
+}
+
+.mainContainerWhyCrypto{
+    display: flex;
+    margin-bottom: 60px;
+    padding-top: 120px;
+
+    width: 1867px;
+}
+
+.topBottomLineImgWhy{
+    width: 100%;
+    max-width: 650px;
+
+}
+#mainContainerWhyCrypto{
+    
+}
+
+@media (max-width:1676px) {
+    .mainContainerWhyCrypto{
+        width: 1541px;
+        display: flex;
+        justify-content: center;
+    }
+    .topLeftWhyCrTop{
+       
+        padding-left: 4%;
+    }
+}
+
+@media (max-width:1436px) {
+    .whyJoinCrHd {
+        font-size: 37px;
+    }
+    .mainContainerWhyCrypto{
+        width: 1146px;
+        margin: auto;
+        margin-top: 120px;
+    }
+    
+}
+
+@media (max-width:1348px) {
+
+    .whyJoinCrHd {
+        font-size: 34px;
+    }
+    .topBottomLineImgWhy {
+     
+        max-width: 450px;
+    }
+
+    .mainContainerWhyCrypto{
+        /* width: 980px; */
+        /* margin: auto; */
+    }
+}
+
+@media (max-width:1162px) {
+    .topLeftWhyCrTop {
+        padding-left: 0px;
+    }
+    .mainContainerWhyCrypto{
+        width: 980px;
+        /* margin: auto; */
+    }
+}
+@media (max-width:991px) {
+.mainContainerWhyCrypto{
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    width: 100%;
+}
+
+.topLeftWhyCrTop {
+    width: 100%;
+}
+.cardWhyCryp{
+    /* width: 100%; */
+}
+.topLeftWhyCr{
+    width: 100%;
+}
+.topLeftWhyCrFix{
+    width: 100%;
+    position: unset;
+}
+
+.cardWhyCrypTop{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+}
+@media (max-width:600px) {
+
+.whyJoinCrHd {
+    font-size: 22px;
+}
+.topBottomLineImgWhy{
+    display: flex;
+    justify-content: center;
+}
+.cardWhyCryp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+}
+.txtWhyCrPara{
+    text-align: center;
+}
+}

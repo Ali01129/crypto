@@ -1,0 +1,83 @@
+.btnPartner{
+    border: 2px solid black;
+    padding: 5px 5px;
+    width: 120px;
+    font-size: 20px;
+    color: black;
+    cursor: pointer;
+}
+
+.addPartner{
+    /* width: auto !important; */
+    color: #fff !important;
+    width: 100% !important;
+    /* width: 1080px !important; */
+}
+.editParBtn nav{
+    margin: 0px !important;
+    padding: 0px !important;
+}
+.cardLogoAdmin{
+    height: 240px;
+    width: 250px;
+    background-color: black;
+    box-shadow: 0 2px 5px rgb(31 30 47 / 50%);
+    border-radius: 10px;
+    display: flex;
+    /* justify-content: center; */
+    padding-top: 20px;
+    padding-bottom: 20px;
+    gap: 20px;
+    align-items: center;
+    flex-direction: column;
+}
+
+.partnerLogoTxt{
+    color: #fff;
+    font-size: 20px;
+}
+
+.mainPartnerLogoData{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px 20px;
+
+}
+
+.imgLogos{
+    width: 90% !important;
+    height: 60% !important;
+    object-fit: contain;
+    margin: auto;
+}
+
+.topDeleteEdit{
+    display: flex;
+    gap: 10px;
+}
+
+.delTxtPart{
+    color: red;
+    background-color: #fff;
+    padding: 5px 5px;
+    display: flex;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+}
+
+
+.editParBtn{
+    border: 1px solid #fff;
+    color: #fff;
+    padding: 5px 5px;
+    border-radius: 3px;
+
+}
+
+.navbar-toggler:focus{
+    box-shadow: none !important;
+}

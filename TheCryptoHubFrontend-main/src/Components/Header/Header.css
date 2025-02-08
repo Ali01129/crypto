@@ -1,0 +1,612 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+#navbarScroll {
+    /* display: flex !important;
+    justify-content: space-between;
+
+    gap: 20px; */
+}
+
+.navbar{
+    padding: 0px !important;
+    background-color: #0c021c !important;
+    box-shadow: 0 0 3px rgb(60 72 88 / 15%);
+    height: 95px !important;
+    position: relative;
+
+    z-index: 9999;
+}
+.me-auto{
+    margin-right: unset !important;
+}
+.navbar.active{
+    position: fixed;
+
+z-index: 999;
+    top: 0;
+}
+.logoImg{
+ 
+    
+}
+.fixed-top {
+    top: 35px !important;
+}
+
+.nav-link{
+    border-radius: 4px; /* Optional rounded corners */
+    color: white !important;
+    font-size: 15.29px !important; 
+
+    font-weight:400 !important;
+    letter-spacing: 1px !important;
+    line-height: 24px !important;
+
+    font-family: 'Barlow', sans-serif;
+
+  
+
+
+}
+.btnTippies{
+    border-radius: 4px; /* Optional rounded corners */
+    color: white !important;
+    font-size: 15.29px !important; 
+
+    font-weight: 400 !important;
+    letter-spacing: 1px !important;
+    line-height: 24px !important;
+
+    font-family: 'Barlow', sans-serif;
+
+padding-right: 0px;
+    background: none;
+    border: none;
+
+}
+
+
+.nav-link:hover {
+    color: #bdbcbc !important;
+    /* background-color: #f0f0f0; /* Optional light background color */
+    border-radius: 4px; /* Optional rounded corners */
+    transition: box-shadow 0.1s ease, background-color 0.1s ease; /* Smooth transition */
+}
+
+.btnTippies:hover {
+    color: #bdbcbc !important;
+     /* background-color: #f0f0f0; */
+    border-radius: 4px; /* Optional rounded corners */
+    transition: box-shadow 0.1s ease, background-color 0.1s ease; /* Smooth transition */
+}
+.loginNavApply1{
+    width: 100px;
+height: 35px;
+gap: 10px;
+display: flex !important;
+justify-content: center;
+align-items: center;
+border-radius: 5px;
+font-family: 'Open Sans', sans-serif;
+
+}
+.loginNavApply123{
+    width: 80px;
+height: 35px;
+gap: 10px;
+display: flex !important;
+justify-content: center;
+align-items: center;
+border-radius: 5px;
+font-family: 'Open Sans', sans-serif;
+
+}
+.loginNavApply2{
+    width: 120px;
+height: 40px;
+gap: 10px;
+display: flex !important;
+justify-content: center;
+align-items: center;
+background: white !important;
+border-radius: 5px;
+color: #100217 !important;
+font-family: 'Open Sans', sans-serif;
+
+}
+.loginNavApply2:hover{
+background-color: #bdbcbc !important;
+}
+
+.loginNavApply2 a{
+    color: black !important;
+
+}
+.rightArrowApply{
+    font-size: 22px;
+    color: black;
+
+
+}
+
+
+.mainContentTippy{
+    display: flex;
+    width: 200px !important;    
+    align-self: center !important;
+    margin: auto !important;
+    
+    flex-direction: column;
+}
+.mainContentTippy span{
+    font-size: 15px;
+    width: 200px !important;
+    
+    border-radius: 5px !important;
+    font-family: 'Barlow', sans-serif;
+    letter-spacing: .5px;
+    font-weight: 400;
+    color: #222 !important;
+}
+.mainContentTippy span:hover{
+  /* background-color: #fff !important; */
+  
+ 
+  border-radius: 5px; /* Optional rounded corners */
+  transition: box-shadow 0.1s ease, background-color 0.1s ease; /* Smooth transition */
+
+}
+.myown{
+    align-self: center;
+    width: 193px !important;
+    padding: 6px 10px;
+margin: auto;
+    border-radius: 5px;
+    transition: box-shadow 0.1s ease, background-color 0.1s ease; /* Smooth transition */
+}
+.myown:hover{
+    background-color: #f0f0f0 !important; 
+    transition: box-shadow 0.1s ease, background-color 0.1s ease; /* Smooth transition */
+}
+.tippy-content{
+    width: 200px !important;
+    background-color: #0c021c !;
+    padding: 0px !important;
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+}
+.loginNavApply:hover{
+    /* color: #000000 !important; */
+
+
+}
+
+.container-fluid{
+    --tw-bg-opacity: 1;
+    background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+    background-image: radial-gradient(302% 5% at 0 0, #392679, rgba(79, 5, 153, 0) 50%), radial-gradient(406% 176% at 0 0, #392679, rgba(79, 5, 153, 0) 50%);
+        padding-top: 10px;
+    padding-bottom: 10px;
+    box-shadow: inset 0 10px 10px -10px #392679; /* Top inner shadow */
+}
+
+.smallblacklogo{
+    width: 188px !important;
+    height: 95px !important;
+}
+.smallblacklogo img{
+    object-fit: contain;
+    width: 100%;
+    height:100%;
+}
+
+
+.loginNav{
+    border-radius: 2px;
+    background-color:black!important;
+
+    color: #fff!important;
+
+    display: flex !important;
+    align-items: center;
+    font-weight: 600 !important;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Barlow', sans-serif;
+    gap: 3px;
+}
+
+.loginIconNav{
+    font-size: 18px;
+    font-family: 'Barlow', sans-serif;
+}
+
+.loginNav:hover{
+
+
+    color: #392679!important;
+
+
+}
+
+.loginNav1{
+    border-radius: 2px;
+    background-color:black!important;
+    border: 1px solid #fff;
+    color: #fff!important;
+
+    display: flex !important;
+    align-items: center;
+    font-weight: 600 !important;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    gap: 3px;
+}
+.loginNav1:hover{
+    background-color: white!important;
+
+    color: black!important;
+}
+.topLogoNav {
+    width: 40%;
+    display: flex !important;
+    justify-content: center;
+
+
+}
+.topLogSign{
+    display: flex !important;
+    align-items: center;
+    gap: 8px;
+    justify-content: center !important;
+    padding-right: 63px;
+    margin-right: 0px !important;
+    width: 30%;
+}
+.firstNav{
+    justify-content: end !important;
+    width: 30%;
+    display: flex !important;
+}
+.navbarBrand{
+    display: none;
+}
+
+a{
+    color: unset !important;
+    text-decoration: none !important;
+}
+.navbar-toggler.collapsed
+{
+    border: none;
+}
+.navbar-toggler
+{
+    border:none !important;
+}
+.threeLine{
+    font-size: 26px;
+    color: white;
+}
+
+
+.firstNav a{
+    padding-right: 8px !important;
+    color: #000000 !important;
+} 
+.spanColored{
+    font-weight: bold !important;
+}
+
+
+.firstNav  .active{
+    background: unset !important;
+}
+.tippy-content{
+    width: 200px !important;
+}
+.tippy-content div{
+    width: 200px !important;
+}
+.tippy-box{
+    width: 200px !important;
+    justify-content: center;
+    background-color: #fff !important;
+    color: #252c4b  !important;
+    box-shadow: 0 0 18px rgb(0 0 0 / 25%) !important;
+
+
+}
+.tippy-arrow{
+    background-color: #fff !important;
+    color: #fff !important;
+
+
+
+}
+#tippy-18{
+    box-shadow: 0 0 18px rgb(0 0 0 / 25%) !important;
+}
+.linkClass{
+    font-size: 18px;
+    padding: 5px 40px 5px 10px;
+    border-radius: 5px !important;
+    font-family: 'Barlow', sans-serif;
+    letter-spacing: .5px;
+}
+
+@media (min-width:1700px) and (max-width:4000px) {
+    .firstNav a{
+        padding-right: 20px !important;
+    }  
+
+    .nav-link{
+
+        font-size: 20.29px !important;
+    
+    }
+    .btnTippies{
+        font-size: 20.29px !important;     
+    
+    }
+    
+}
+
+@media (min-width:992px) and (max-width:1200px) {
+    .firstNav a{
+        padding-right: 5px !important;
+    }  
+.topLogSign{
+    width:40% !important;
+}
+.topLogoNav{
+    width: 30% !important;
+}
+
+.firstNav{
+    width: 40% !important;
+}
+
+    
+}
+
+@media (max-width:992px) {
+    .navbar-collapse{
+    padding-bottom: 50px !important;
+    
+    }
+    .topLogSign{
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+    }
+    #navbarScroll{
+        /* justify-content: unset !important; */
+        /* display: unset !important; */
+    }
+    #navbarScroll {
+        /* display: unset !important;
+        justify-content: unset !important;
+    
+        gap: unset !important; */
+    }
+    .tippy-box[data-placement^=bottom]>.tippy-arrow:before{
+        left: 50% !important;
+    }
+    .tippy-arrow{
+    
+        background-color: unset !important;
+    }
+    .mainContentTippy span {
+        /* color: #fff !important; */
+    }
+
+    .firstNav{
+        padding-left: unset !important;
+        height: auto !important;
+        max-height: unset !important;
+    }
+    .firstNav a{
+        padding-right: 0px !important;
+        color: #000000 !important;
+    }
+
+    .topLogSign{
+        padding-left: 63px !important;
+        max-height: unset !important;
+        width: 100% !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+    }
+    .loginNavApply{
+        margin: auto !important;
+    }
+    .navbarBrand
+    {
+        margin-top: 10px;
+        width:150px !important;
+        height:85px !important;
+    }
+
+    .navbar{
+        height: unset !important;
+    }
+    .topLogoNav{
+        display: none !important;
+    }
+    .fixed-top {
+        top: 60px !important;
+    }
+    .navbarBrand{
+        display: block;
+    }
+    .logoImgHide{
+        display: none;
+    }
+    .nav-link{
+        display: flex !important;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #navbarScroll div{
+        width: 100%;
+    }
+    .loginNav1{
+        padding: 10px !important;
+     }
+    .loginNav{
+        padding: 10px !important;
+    }
+    .navbar-toggler{
+      
+    }
+    .container-fluid{
+        padding: 0px 10px !important;
+    }
+    .navbar-toggler:focus{
+        box-shadow: unset !important;
+    }
+    .navbar-brand{
+        margin-left: 5px !important;
+    }
+
+}
+
+
+
+@media (max-width:600px) {
+    .fixed-top {
+        top: 110px !important;
+    }
+    .mainHeaderComp{
+        padding-top: 100px;
+    }
+
+    .logoImg{
+        height: 65px;
+    }
+    
+}
+
+.loginNavApply1 .nav-link{
+    border-radius: 4px !important;
+    }
+    
+    .loginNavApply1 .nav-link:hover{
+        color: #000000 !important;
+        background-color: #f0f0f0; /* Optional light background color */
+        
+        border-radius: 4px; /* Optional rounded corners */
+        transition: box-shadow 0.1s ease, background-color 0.1s ease; /* Smooth transition */
+    }
+    .loginNavApply123 .nav-link{
+        border-radius: 4px !important;
+        }
+        
+        .loginNavApply123 .nav-link:hover{
+            color: #000000 !important;
+            background-color: #f0f0f0; /* Optional light background color */
+            
+            border-radius: 4px; /* Optional rounded corners */
+            transition: box-shadow 0.1s ease, background-color 0.1s ease; /* Smooth transition */
+        }
+    
+
+.smallblacklogo:hover{
+background-color: transparent !important;
+}
+.smallblacklogo{
+    background-color:transparent !important;
+}
+
+
+@media (min-width:1293px) and (max-width:1440px) {
+    .firstNav a{
+        padding-right: 10px !important;
+    }  
+
+    .nav-link{
+
+        font-size: 17.29px !important;
+    
+    }
+    .btnTippies{
+        font-size: 17.29px !important;     
+    
+    }
+    
+}
+
+@media (min-width:1440px) and (max-width:1597px) {
+    .firstNav a{
+        padding-right: 13px !important;
+    }  
+
+    .nav-link{
+
+        font-size: 18.29px !important;
+    
+    }
+    .btnTippies{
+        font-size: 18.29px !important;     
+    
+    }
+    
+}
+
+@media (min-width:1598px) and (max-width:1700px) {
+    .firstNav a{
+        padding-right: 18px !important;
+    }  
+
+    .nav-link{
+
+        font-size: 18.29px !important;
+    
+    }
+    .btnTippies{
+        font-size: 18.29px !important;     
+    
+    }
+    
+}
+
+
+.mainContentTippy span{
+ 
+    width: 100% !important;
+ 
+}
+
+
+@media (width: 992px) {
+    .navbar-collapse {
+            padding-bottom: 2px !important;
+            margin-left: 77px !important;
+            margin-right: 5px;
+        }
+        .loginNavApply1{
+            width: 80px;
+        }
+    .loginNavApply2{
+        width: 90px;
+    height: 40px;
+    gap: 10px;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    background: white !important;
+    border-radius: 5px;
+    color: #100217 !important;
+    font-family: 'Open Sans', sans-serif;
+    
+    }
+    .navbar-brand {
+        margin-left: 31px !important;
+    }
+}
