@@ -84,13 +84,13 @@ const registerSpecial= async(req,res)=>{
                     port: 465,
                     host:"smtp.gmail.com",
                       auth: {
-        user: 'thecryptohub.com@gmail.com',//add here your mail
-        pass: 'jpurqadqvwjqmygm'//add here your gmail app pass
+                        user: process.env.GMAIL_SENDER,
+                        pass: process.env.GMAIL_PASS
         },
                     secure: true,
                     });
                     var mailOptions={
-                        from:'thecryptohub.com@gmail.com',
+                        from:process.env.GMAIL_SENDER,
                         to:emailIs,
                         subject:subjectIs,
                         text:msgIs
@@ -241,13 +241,13 @@ var transporter = nodemailer.createTransport({
     port: 465,
     host:"smtp.gmail.com",
       auth: {
-        user: 'thecryptohub.com@gmail.com',//add here your mail
-        pass: 'jpurqadqvwjqmygm'//add here your gmail app pass
+        user: process.env.GMAIL_SENDER,
+        pass: process.env.GMAIL_PASS
         },
     secure: true,
     });
     var mailOptions={
-        from:'thecryptohub.com@gmail.com',
+        from:process.env.GMAIL_SENDER,
         to:emailIs,
         subject:subjectIs,
         text:msgIs
@@ -331,13 +331,13 @@ const register= async(req,res)=>{
             port: 465,
             host:"smtp.gmail.com",
              auth: {
-        user: 'thecryptohub.com@gmail.com',//add here your mail
-        pass: 'jpurqadqvwjqmygm'//add here your gmail app pass
+              user: process.env.GMAIL_SENDER,
+              pass: process.env.GMAIL_PASS
         },
             secure: true,
             });
             var mailOptions={
-                from:'thecryptohub.com@gmail.com',
+                from:process.env.GMAIL_SENDER,
                 to:emailIs,
                 subject:subjectIs,
                 text:msgIs
@@ -406,13 +406,13 @@ const register= async(req,res)=>{
                 port: 465,
                 host:"smtp.gmail.com",
                  auth: {
-        user: 'thecryptohub.com@gmail.com',//add here your mail
-        pass: 'jpurqadqvwjqmygm'//add here your gmail app pass
+                  user: process.env.GMAIL_SENDER,
+                  pass: process.env.GMAIL_PASS
         },
                 secure: true,
                 });
                 var mailOptions={
-                    from:'thecryptohub.com@gmail.com',
+                    from:process.env.GMAIL_SENDER,
                     to:emailIs,
                     subject:subjectIs,
                     text:msgIs
@@ -464,13 +464,13 @@ const msgIs = `Your Code is: ${generatedCode}`;
           port: 465,
           host:"smtp.gmail.com",
            auth: {
-      user: 'thecryptohub.com@gmail.com',//add here your mail
-      pass: 'jpurqadqvwjqmygm'//add here your gmail app pass
+            user: process.env.GMAIL_SENDER,
+            pass: process.env.GMAIL_PASS
       },
           secure: true,
           });
           var mailOptions={
-              from:'thecryptohub.com@gmail.com',
+              from:process.env.GMAIL_SENDER,
               to:emailIs,
               subject:subjectIs,
               text:msgIs
@@ -608,14 +608,14 @@ const forgotPassword = async (req, res) => {
       port: 465,
       host: "smtp.gmail.com",
       auth: {
-        user: 'thecryptohub.com@gmail.com',
-        pass: 'jpurqadqvwjqmygm'
+        user: process.env.GMAIL_SENDER,
+        pass: process.env.GMAIL_PASS
       },
       secure: true,
     });
 
     var mailOptions = {
-      from: 'thecryptohub.com@gmail.com',
+      from: process.env.GMAIL_SENDER,
       to: emailIs,
       subject: subjectIs,
       html: msgIs // Use html instead of text to send HTML formatted email
@@ -794,14 +794,14 @@ var transporter = nodemailer.createTransport({
     port: 465,
     host:"smtp.gmail.com",
       auth: {
-        user: 'thecryptohub.com@gmail.com',//add here your mail
-        pass: 'jpurqadqvwjqmygm'//add here your gmail app pass
+        user: process.env.GMAIL_SENDER,
+        pass: process.env.GMAIL_PASS
         },
     secure: true,
     });
     var mailOptions={
-        from:'thecryptohub.com@gmail.com',
-        to:'thecryptohub.com@gmail.com',
+        from:process.env.GMAIL_SENDER,
+        to:process.env.GMAIL_SENDER,
         subject:`TheCryptoHub |New Contact Us Message from ${name}`,
         html:msgIs
     };
@@ -846,13 +846,13 @@ var transporter = nodemailer.createTransport({
     port: 465,
     host:"smtp.gmail.com",
       auth: {
-        user: 'thecryptohub.com@gmail.com',//add here your mail
-        pass: 'jpurqadqvwjqmygm'//add here your gmail app pass
+        user: process.env.GMAIL_SENDER,
+        pass: process.env.GMAIL_PASS
         },
     secure: true,
     });
     var mailOptions={
-        from:'thecryptohub.com@gmail.com',
+        from:process.env.GMAIL_SENDER,
         to:emailIs,
         subject:subjectIs,
         text:msgIs

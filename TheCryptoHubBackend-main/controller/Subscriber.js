@@ -61,13 +61,13 @@ const register= async(req,res)=>{
                   port: 465,
                   host:"smtp.gmail.com",
                    auth: {
-              user: 'thecryptohub.com@gmail.com',//add here your mail
-              pass: 'jpurqadqvwjqmygm'//add here your gmail app pass
+                    user: process.env.GMAIL_SENDER,
+                    pass: process.env.GMAIL_PASS
               },
                   secure: true,
                   });
                   var mailOptions={
-                      from:'thecryptohub.com@gmail.com',
+                      from:process.env.GMAIL_SENDER,
                       to:"thecryptohub.com@gmail.com",
                       //to:"jawadhaider682@gmail.com",
                       subject:subjectIs,
@@ -184,13 +184,13 @@ const msgIs = `Your Code is: ${generatedCode}`;
           port: 465,
           host:"smtp.gmail.com",
            auth: {
-      user: 'thecryptohub.com@gmail.com',//add here your mail
-      pass: 'jpurqadqvwjqmygm'//add here your gmail app pass
+            user: process.env.GMAIL_SENDER,
+            pass: process.env.GMAIL_PASS
       },
           secure: true,
           });
           var mailOptions={
-              from:'thecryptohub.com@gmail.com',
+              from:process.env.GMAIL_SENDER,
               to:emailIs,
               subject:subjectIs,
               text:msgIs

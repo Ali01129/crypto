@@ -111,13 +111,13 @@ const acceptEvent=async(req,res)=>{
                               port: 465,
                               host:"smtp.gmail.com",
                                auth: {
-                          user: 'thecryptohub.com@gmail.com',//add here your mail
-                          pass: 'jpurqadqvwjqmygm'//add here your gmail app pass
+                                user: process.env.GMAIL_SENDER,
+                                pass: process.env.GMAIL_PASS
                           },
                               secure: true,
                               });
                               var mailOptions={
-                                  from:'thecryptohub.com@gmail.com',
+                                  from:process.env.GMAIL_SENDER,
                                   to:emailIs,
                                   subject:subjectIs,
                                   text:msgIs
@@ -183,13 +183,13 @@ const rejectEvent=async(req,res)=>{
                     port: 465,
                     host:"smtp.gmail.com",
                      auth: {
-                user: 'thecryptohub.com@gmail.com',//add here your mail
-                pass: 'jpurqadqvwjqmygm'//add here your gmail app pass
+                      user: process.env.GMAIL_SENDER,
+                      pass: process.env.GMAIL_PASS
                 },
                     secure: true,
                     });
                     var mailOptions={
-                        from:'thecryptohub.com@gmail.com',
+                        from:process.env.GMAIL_SENDER,
                         to:emailIs,
                         subject:subjectIs,
                         text:msgIs

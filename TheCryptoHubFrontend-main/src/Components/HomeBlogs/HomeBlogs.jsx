@@ -41,7 +41,7 @@ const HomeBlogs = () => {
         const transformedBlogs = blogsData.map((blog) => ({
           id: blog._id,
           authorName: blog.user.fullName,
-          postedDate: `${new Date(blog.createdAt).getDate()} ${getMonthName(blog.createdAt)}`,
+          postedDate: blog.createdAt,
           readTime: blog.readTime,
           authorProfilePic: blog.user.image,
           title: blog.title,
@@ -121,7 +121,7 @@ const HomeBlogs = () => {
                     readTime: auctionData[0].readTime,
                     authorName: auctionData[0].authorName,
                     authorProfilePic: auctionData[0].authorProfilePic,
-                    postedDate: auctionData[0].postedDate,
+                    postedDate: formatDate(auctionData[0].postedDate),
                     category: auctionData[0].category,
                     references: auctionData[0].references
                   }
@@ -147,7 +147,7 @@ const HomeBlogs = () => {
                             readTime: auctionData[0].readTime,
                             authorName: auctionData[0].authorName,
                             authorProfilePic: auctionData[0].authorProfilePic,
-                            postedDate: auctionData[0].postedDate,
+                            postedDate: formatDate(auctionData[0].postedDate),
                             category: auctionData[0].category,
                             references: auctionData[0].references
                           }
@@ -181,7 +181,7 @@ const HomeBlogs = () => {
                       readTime: video.readTime,
                       authorName: video.authorName,
                       authorProfilePic: video.authorProfilePic,
-                      postedDate: video.postedDate,
+                      postedDate: formatDate(video.postedDate),
                       category: video.category,
                       references: video.references
                     }
